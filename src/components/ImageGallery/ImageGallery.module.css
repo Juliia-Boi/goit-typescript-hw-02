@@ -1,0 +1,26 @@
+/* ImageGallery.module.css */
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Рівні картки з мінімальною шириною 250px */
+  gap: 16px; /* Простір між картками */
+  padding: 16px;
+  list-style: none;
+  margin: 0;
+}
+
+.imageGalleryItem {
+  height: 250px; /* Встановлюємо висоту картки */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.imageGalleryItem img {
+  width: 100%; /* Ширина картки */
+  height: 100%; /* Висота картки */
+  object-fit: fill; /* Заповнюємо всю площу вікна, розтягуємо зображення */
+}
